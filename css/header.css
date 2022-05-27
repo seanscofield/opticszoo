@@ -1,0 +1,33 @@
+#banner {
+    height: 70px;
+    line-height: 40px;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+    color: #cccccc;
+    background-image: url(../images/svg/optx-zoo-3d.svg), linear-gradient(to right, #e7e7e7, #333333);;
+    background-position: 20px 0px;
+    background-color: #e7e7e7;
+    background-repeat: no-repeat;
+/*    background: linear-gradient(to right, #e7e7e7 , #33333); /* Standard syntax */
+    /*background-color: #e7e7e7;*/
+    /*background-color: #5F2289;*/
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+}
+
+#banner > ul {
+	list-style: none;
+	float: right;
+}
+
+#banner p {
+	float: left;
+}
+
+#banner li {
+	float: right;
+	padding-right: 10px;
+	width: 40px;
+	height: 40px;
+}
