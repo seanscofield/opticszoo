@@ -1,6 +1,6 @@
 # Optx Zoo
 
-Welcome to the github page for Optx Zoo, a web-app designed to provide a simple demonstration of 2D ray tracing.
+Welcome to the publicy facing github page for Optx Zoo, a web-app designed to provide a simple demonstration of 2D ray tracing.
 
 ### Requesting new features
 
