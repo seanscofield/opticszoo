@@ -1,0 +1,53 @@
+#dialog-overlay {
+	display: none;
+	opacity: 0.75;
+	position: fixed;
+	background: #ccc;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+#dialog-box {
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius: 8px;
+	z-index: 100;
+}
+
+#dialog-box img {
+	max-height: 475px;
+}
+
+#dialog-box > div {
+	background: #afc;
+	margin: 10px;
+}
+
+#dialog-box #projectsCarousel {
+	background: #333;
+}
+
+#dialog-box > div > #dialog-box-head {
+	background: #666;
+	color: #ccc;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#dialog-box > div > #dialog-box-body {
+	background: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+#dialog-box > div > #dialog-box-foot {
+	text-align: right;
+	background: #666;
+	padding: 10px;
+}
+
+#dialog-box > div > #dialog-box-foot input {
+	float: left;
+}

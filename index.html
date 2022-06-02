@@ -1,0 +1,106 @@
+<script src='js/all.min.js'></script>
+<!doctype html>
+<html>
+    <head>
+
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/elements-navbar.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap-theme.min.css">
+    <title>Optx Zoo</title>
+    <link rel="icon" type="image/x-icon" href="images/svg/plano-concave.svg">
+    </head>
+
+    <body style="margin: 0px;">
+        <!-- The Modal -->
+        <div id="helpModal" class="modal" style="display:none;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Controls</h4>
+                <br>
+                <p>
+                    Undo: Ctrl-Z
+                    <br>
+                    Redo: Ctrl-Y
+                    <br>
+                    Magnify Canvas: M
+                    <br>
+                    Move Canvas: Space
+                    <br>
+                    Rotate Objects: Shift
+                </p>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+        <!-- <div id="lines"></div> -->
+
+            <div id="dialog-overlay"></div>
+
+    <!--         <div id="wrap_video">
+                <div id="video_box">
+                    <div id="video_overlays">
+                        <img id="skip"></img>
+                    </div>
+                    <div>
+                        <video src="videos/intro.mp4" id="myVideo" preload="auto" width="100%" height="100%" autoplay="autoplay">
+                            Your browser does not support the <code>video</code> element.
+                        </video>
+                    </div>
+                </div>
+            </div> -->
+
+            <nav id="banner">
+                <ul id="header-icons">
+                    <li><img src="images/svg/header-icons/keyboard_icon_small.png" id="help"></li>
+                    <li><a href="https://github.com/seanscofield/opticszoo" target="_blank"><img src="images/png/header-icons/github_icon_small.png" id="github"></a></li>
+                    <li><img src="images/svg/header-icons/share-icon.svg" id="share"></li>
+<!--                     <li><img src="images/svg/header-icons/load-icon.svg" id="load"></li>
+                    <li><img src="images/svg/header-icons/save-icon.svg" id="save"></li> -->
+                    <li><img src="images/svg/header-icons/redo-icon.svg" id="redo"></li>
+                    <li><img src="images/svg/header-icons/undo-icon.svg" id="undo"></li>
+
+                </ul>
+
+            </nav>
+
+            <input id='fileInput' name="asdf" type='file' style="display:none;" accept='.optx' onclick="handleFileSelect" />
+
+            <table class="attrBox CSSTableGenerator" id="attrBox">
+              <tr>
+              </tr>
+            </table>
+
+            <div id="tool_canvas_wrapper">
+                <nav class="toolbar">
+                    <ul>
+                        <li class="optical-element" id="plano-concave">
+                            <img src="images/svg/plano-concave.svg" draggable="false">
+                        </li>
+                        <li class="optical-element" id="plano-convex">
+                            <img src="images/svg/plano-convex.svg" draggable="false">
+                        </li>
+                        <li class="optical-element" id="medium">
+                            <img src="images/svg/medium.svg" draggable="false">
+                        </li>
+                        <li class="optical-element" id="mirror">
+                            <img src="images/svg/mirror.svg" draggable="false">
+                        </li>
+                        <li class="optical-element" id="wall">
+                            <img src="images/svg/wall.svg" draggable="false">
+                        </li>
+                        <li class="optical-element" id="lightSource">
+                            <img src="images/svg/lightSource.svg" draggable="false">
+                        </li>
+                    </ul>
+                </nav>
+                <div width="100%" height="100%">
+                    <canvas id="myCanvas" width="100%" height="100%" style="border:1px solid #000000;">
+                    </canvas>
+                </div>
+            </div>
+
+    </body>
+</html>

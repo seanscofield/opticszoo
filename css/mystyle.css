@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #111111;
+}
+
+body {
+    background-color: #1f1f14;
+}
+
+#tool_canvas_wrapper {
+    width: 100%;
+    background-color: "#1a1a1a";
+    /*height: 100%;*/
+}
+
+#lines {
+    background-size: 40px 40px;
+    background-color: "#1a1a1a";
+    background-image:repeating-linear-gradient(0deg, #fff, #fff 1px, transparent 1px, transparent 40px),repeating-linear-gradient(-90deg, #fff, #fff 1px, transparent 1px, transparent 40px);
+    height:100%;
+    width:100%;
+    opacity:0.14;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-100;
+    pointer-events: none;
+}
+
+
+canvas {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    float: left;
+    background-color:transparent;
+    background-attachment: fixed;
+    background-image: url("../images/svg/grid-dark.svg");
+    background-size: 20px 20px;
+    /*background-repeat: repeat-y repeat-x;*/
+
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+}
+
+canvas.bg {
+  border: 10px solid black;
+}
+
+#wrap_video {
+    position: absolute;
+    background-color: black !important; /* or whatever you want */
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#video_box {
+    position:relative;
+}
+
+#video_overlays {
+    position:absolute;
+    width: auto;
+    height: auto;
+    background-color:transparent;
+    z-index:300000;
+    top:20px;
+    right:20px;
+}
+
+#video_overlays img {
+    background: url(../images/skip2.png);
+    width: 246px;
+    height: 80px;
+}
+
+.last {
+    float: none;
+    overflow: hidden;
+}
+
+/*a:hover:not(.active) {
+    background-color: #111;
+}*/
+
+/*.active {
+background-color:#4CAF50;
+}
+*/
+.attrBox {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+.CSSTableGenerator {
+    margin:0px;padding:0px;
+    opacity: 0.4;
+    transition: opacity .12s ease-in-out;
+    -moz-transition: opacity .12s ease-in-out;
+    -webkit-transition: opacity .12s ease-in-out;
+    box-shadow: 10px 10px 5px #888888;
+    border:1px solid #000000;
+
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+
+.CSSTableGenerator:hover {
+    opacity: 1;
+}
+
+.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+    width:100%;
+    height:100%;
+    margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#5da6ef; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#bfe0ef; }.CSSTableGenerator td{
+    vertical-align:middle;
+    border:1px solid #000000;
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:7px;
+    font-size:20px;
+    font-family:Arial;
+    font-weight:normal;
+    color:#000000;
+}.CSSTableGenerator tr:last-child td{
+    border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+    border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+    border-width:0px 0px 0px 0px;
+}
